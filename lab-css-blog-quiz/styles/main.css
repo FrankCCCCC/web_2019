@@ -1,0 +1,23 @@
+html {
+    height: 100%;
+}
+body {
+  height: 100%;
+  background: #fff url("../images/bg.jpg");
+}
+div {
+  background-color: rgba(250, 250, 250, 1.0);
+  width: 90%;
+  max-width: 1000px;
+  height: 120%;
+  max-height: 10000px;
+}
+#date1{
+  color: blue;
+  text-transform: uppercase;
+}
+#date2{
+  color: blue;
+  text-transform: uppercase;
+}
+
