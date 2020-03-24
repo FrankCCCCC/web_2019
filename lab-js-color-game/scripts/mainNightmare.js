@@ -17,6 +17,7 @@ var resetDisplay = document.querySelector("#reset span");
 
 
 function init() {
+    resetButton.style.visibility = "hidden";
     initCards();
     reset();
     timer();
@@ -39,6 +40,7 @@ function initCards() {
                 body.style.animationPlayState = "pause";
                 body.style.webkitAnimationPlayState = "pause";
                 body.style.backgroundColor = clickedColor;
+                resetButton.style.visibility = "visible";
                 gameOver = true;
             } else {
                 this.style.opacity = 0;
@@ -50,6 +52,7 @@ function initCards() {
 
 function reset() {
     gameOver = false;
+    resetButton.style.visibility = "hidden";
     colors = generateRandomColors(numCards);
     //pick a new random color from array
     pickedColor = pickColor();
@@ -122,12 +125,14 @@ function timer(){
     if(time < 0){
       clearInterval(count);
       eTimer.textContent = "Time Out!";
+      messageDisplay.textContent = ""
       resetDisplay.textContent = "Play Again"
       changeColors("#FFF");
 
       body.style.animationPlayState = "pause";
       body.style.webkitAnimationPlayState = "pause";
       body.style.backgroundColor = pickedColor;
+      resetButton.style.visibility = "visible";
       gameOver = true;
     }
     body.style.backgroundColor = rgb(255, 255, 0);
