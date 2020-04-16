@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+	<title id="title1">Color Game</title>
+	<link rel="stylesheet" type="text/css" href="styles/mainNightmare.css">
+</head>
+
+<body>
+	<div id="stripe">
+		<div id="navbar" class="navbar navbar-inverse container-fluid">
+			<span id="brand">Color Game</span>
+			<a class="btn navbar-btn" href="index.html"><span class="navbarBtn">Easy</span></a>
+			<a class="btn navbar-btn" href="hard.html"><span class="navbarBtn">Hard</span></a>
+			<a class="btn navbar-btn" href="nightmare.html"><span class="navbarBtn active">Nightmare</span></a>
+			<span id="about">DataLab</span>
+		</div>
+	</div>
+
+	<h1><span id="color-picked">RGB</span><br><span id="message">What's the color?</span><br><span id="timer">5S</span></h1>
+
+	<div id="card-container" class="container">
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+    <div class="card"></div>
+	</div>
+
+
+	<div id="footer">
+		<button id="reset"><i class="fa fa-retweet" aria-hidden="true"></i>&nbsp;&nbsp;<span>New Color</span></button>
+	</div>
+
+	<script type="text/javascript" src="scripts/mainNightmare.js"></script>
+</body>
+
+</html>
